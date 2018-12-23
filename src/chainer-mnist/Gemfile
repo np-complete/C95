@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'red-chainer'
+gem 'numo-linalg'
+gem 'pry'
+gem 'pycall' #, path: '/home/masaki/src/github.com/mrkn/pycall'

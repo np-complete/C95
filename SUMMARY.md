@@ -3,3 +3,4 @@
 * [Introduction](README.md)
 * [PyCall](pycall.md)
   * [MNIST](mnist.md)
+* [RedChainer](red-chainer.md)
