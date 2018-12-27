@@ -1,6 +1,6 @@
 # PyCall
 
-まず、RubyからPythonを使う **[pycall](https://github.com/mrkn/pycall)** を使ってみましょう。
+まず、RubyからPythonを使う [PyCall](https://github.com/mrkn/pycall) を使ってみましょう。
 pycallを使うには `libpython.so` が必要なので、 `apt install python-dev` や、pyenvを使っている場合は `PYTHON_CONFIGURE_OPTS=--enable-shared` の環境変数をセットしてビルドする必要があります。
 
 READMEにあるように、`pyimport` メソッドを使ってpythonのライブラリを読み込むことができます。
@@ -8,7 +8,8 @@ READMEにあるように、`pyimport` メソッドを使ってpythonのライブ
     [1] pry(main)> pyimport :numpy
     => :numpy
     [2] pry(main)> numpy
-    => <module 'numpy' from '/home/masaki/.pyenv/versions/3.7.1/lib/python3.7/site-packages/numpy/__init__.py'>
+    => <module 'numpy' from '/home/masaki/.pyenv/versions/3.7.1/
+        lib/python3.7/site-packages/numpy/__init__.py'>
     [3] pry(main)> numpy.class
     => Module
 

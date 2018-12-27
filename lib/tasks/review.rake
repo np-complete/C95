@@ -26,6 +26,7 @@ def convert_summary
   catalog['PREDEF'] = ['README.re']
   File.read('SUMMARY.md').scan(/\((.*.md)/).flatten.each do |file|
     case file
+    when /README/
     when /appendix/
       catalog['APPENDIX'] << file.ext('.re')
     when /postdef/

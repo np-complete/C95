@@ -29,7 +29,7 @@ PyCall::LibPython::Helpers.define_wrapper_method(trainer, 'extend')
 突然こんなコードが出てきたら面食らいますね。
 
 次に、PyCallはどうやら **PythonのクラスのサブクラスをRubyで定義できない** という問題があります。
-定義はできるんですが、内部で指している **__pyptr__** が共通なので、Pythonから見たら元のクラスに見えます。
+定義はできるんですが、内部で指している `__pyptr__` が共通なので、Pythonから見たら元のクラスに見えます。
 Chainerは、Chainクラスを継承して **クラス定義で** ネットワークを構築しなければならないので[^1]、大問題です。
 
 ```ruby
@@ -81,7 +81,8 @@ Pythonから見たら完全にChainクラスのようです。
 でもちゃんとPython側のインスタンスができてるのは凄いな
 
     mlp.forward(0.0)
-    NoMethodError: undefined method `forward' for <chainer.link.Chain object at 0x7f689f11d080>:Object
+    NoMethodError: undefined method `forward' for
+        <chainer.link.Chain object at 0x7f689f11d080>:Object
 
 どうもRuby側からもおかしな認識されていて `forward` なんてメソッドはないようです。
 
