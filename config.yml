@@ -3,11 +3,11 @@ bookname: c95
 language: ja
 booktitle: RubyistだけどAIがしたい!
 aut: まさらっき
-
 pbl: NP-complete
+prt: キンコーズ
 source: https://github.com/np-complete/c95
-date: 2018-12-29
-history: [["2018-12-29"]]
+date: 2018-12-30
+history: [["2018-12-30"]]
 
 # デバッグフラグ。nullでないときには一時ファイルをカレントディレクトリに作成し、削除もしない
 debug: null
@@ -57,9 +57,10 @@ secnolevel: 2
 
 # 表紙にするHTMLファイル。ファイル名を指定すると表紙として入る
 # cover: null
+cover: titlepage.tex
 #
 # 表紙に配置し、書籍の影絵にも利用する画像ファイル。省略した場合はnull (画像を使わない)。画像ディレクトリ内に置いてもディレクトリ名は不要(例: cover.jpg)
-coverimage: cover.jpg
+coverimage:
 #
 # 表紙の後に大扉ページを作成するか。省略した場合はtrue (作成する)
 # titlepage: true
