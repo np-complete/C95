@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+gem 'red-arrow'
+gem 'msgpack'
+gem 'oj'
+gem 'pry'
+gem 'faker'
