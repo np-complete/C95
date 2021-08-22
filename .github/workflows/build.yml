@@ -10,3 +10,8 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+      - uses: masarakki/docker-alias@v2
+        with:
+          image: vvakame/review:5.2
+          commands: review-pdfmaker
+      - run: bundle exec rake pdf
