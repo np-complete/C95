@@ -1,0 +1,12 @@
+name: build
+on:
+  pull_request:
+    branches: "**"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
