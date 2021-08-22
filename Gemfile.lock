@@ -4,7 +4,7 @@ GEM
     image_size (2.0.0)
     md2review (1.12.0)
       redcarpet (> 2.0.0)
-    rake (12.3.1)
+    rake (12.3.3)
     redcarpet (3.4.0)
     review (2.5.0)
       image_size
