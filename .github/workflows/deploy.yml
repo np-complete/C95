@@ -1,0 +1,27 @@
+name: deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: masarakki/docker-alias@v2
+        with:
+          image: vvakame/review:5.8
+          commands: review-pdfmaker
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - run: rm `bundle exec which review-pdfmaker`
+      - run: bundle exec rake pdf
+        env:
+          REVIEW_CONFIG_FILE: config.ebook.yml
+      - uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.BOOK_DEPLOY_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.BOOK_DEPLOY_SECRET_KEY }}
+          aws-region: us-west-2
+      - run: aws s3 cp book.pdf s3://np-complete-books/pdf/C95.pdf --acl public-read
