@@ -1,22 +1,22 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    image_size (3.3.0)
+    image_size (3.4.0)
     md2review (1.12.1)
       redcarpet (> 2.0.0)
     pastel (0.8.0)
       tty-color (~> 0.5)
     rake (13.2.1)
     redcarpet (3.6.0)
-    review (5.8.0)
+    review (5.9.0)
       image_size
       rexml
       rouge
       rubyzip
       tty-logger
-    rexml (3.2.8)
-      strscan (>= 3.0.9)
-    rouge (4.1.2)
+    rexml (3.3.1)
+      strscan
+    rouge (4.3.0)
     rubyzip (2.3.2)
     strscan (3.1.0)
     tty-color (0.6.0)
