@@ -6,7 +6,7 @@ GEM
       redcarpet (> 2.0.0)
     pastel (0.8.0)
       tty-color (~> 0.5)
-    rake (13.2.1)
+    rake (13.3.0)
     redcarpet (3.6.0)
     review (5.9.0)
       image_size
