@@ -9,14 +9,14 @@ GEM
     faker (3.8.0)
       i18n (>= 1.8.11, < 2)
     fiddle (1.1.8)
-    gio2 (4.3.8)
+    gio2 (4.3.9)
       fiddle
-      gobject-introspection (= 4.3.8)
-    glib2 (4.3.8)
+      gobject-introspection (= 4.3.9)
+    glib2 (4.3.9)
       native-package-installer (>= 1.0.3)
       pkg-config (>= 1.3.5)
-    gobject-introspection (4.3.8)
-      glib2 (= 4.3.8)
+    gobject-introspection (4.3.9)
+      glib2 (= 4.3.9)
     i18n (1.15.2)
       concurrent-ruby (~> 1.0)
     io-console (0.9.2)
@@ -61,9 +61,9 @@ CHECKSUMS
   extpp (0.1.3) sha256=211120f24398de9f4304932043a28f4abff0fbacdddb713ee8c9f01223aae6e7
   faker (3.8.0) sha256=c147b308df73a90f27a4fc84f18d4c22ef0ad9c2a64b2b61c86fd0ca71753efc
   fiddle (1.1.8) sha256=7fa8ee3627271497f3add5503acdbc3f40b32f610fc1cf49634f083ef3f32eee
-  gio2 (4.3.8) sha256=06f4ea5e31ed7910f619dea2ef56a2b349e6da470f77005c63e9d48170c7df44
-  glib2 (4.3.8) sha256=7b8c4dac3884c65f220552eef9f22e2ca4fa20fba06ec80161842b6c119671b4
-  gobject-introspection (4.3.8) sha256=c5b068b9330f97d5e4cdeb747ad7645d3ec2bbbf9fa16e61a0f8b4f9f34a0521
+  gio2 (4.3.9) sha256=6ddcbaec05beb20332fcfd1ca598dcf46392541aeb0b5d4b8df2306adffc0acc
+  glib2 (4.3.9) sha256=32c1db447e812e5e34f9e62f1f2103e2cb4a5d0d03217a886b2a2877639549cd
+  gobject-introspection (4.3.9) sha256=509c0e69b99fb171683f28ea3172f82a46950b032f4628986330418771bdd56b
   i18n (1.15.2) sha256=00f9eb62412fe593b2a65a97daa75300d37abb8f7202ec748e94b6d46a9dd1b5
   io-console (0.9.2) sha256=efa74f891dd03c0939a931dfc6e74c2813d904763d456ea9762b0525e748db08
   method_source (1.1.0) sha256=181301c9c45b731b4769bc81e8860e72f9161ad7d66dd99103c9ab84f560f5c5
